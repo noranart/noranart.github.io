@@ -38,7 +38,7 @@
             <h1 style="color:#FFFFFF;">Pedestrian Detection</h1>
             <h3 style="color:#CCCCCC;">for Mobile Platforms</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Paper</a>
+            <a href="#about" class="btn btn-light">Paper</a>
         </div>
     </header>
 
@@ -47,8 +47,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>Project Goal</h2>
+                    <p class="lead">produce a deep network capable of detecting and localizing nearby, potentially occluded pedestrians under reasonable lighting conditions, that can be integrated into a mobile robot (eg. Tegra X1 chip)</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -62,59 +62,39 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Compression Technique</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
+                            
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Knowledge Distillation</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Train a large network as teacher model and transfer the knowledge to smaller student model <a href="https://arxiv.org/abs/1503.02531">[Hinton, 2015]</a></p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
+                            
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Model Confidence</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Estimate teacher confidence by enable dropout at test time <a href="https://arxiv.org/abs/1506.02142">[Yarin Gal, 2015]</a>, and maximize the log-likehood of multivariate Gaussian distribution</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
+                            
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Hint Layer</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Increase the dimensionality of teacher's guidance by adding extra fully-connected layer to allow better representation of teacher output distribution</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
+                            
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>ACF</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Use ACF <a href="https://vision.cornell.edu/se3/wp-content/uploads/2014/09/DollarPAMI14pyramids_0.pdf">[Dollar, 2014]</a> as hand-designed feature to increse the student model complexity without introducing significant overhead</p>
                             </div>
                         </div>
                     </div>
