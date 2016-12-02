@@ -20,7 +20,7 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
-    padding: 100px;
+    padding: 0px 0px 100px 0px;
 }
 
 .text-vertical-center h1 {
