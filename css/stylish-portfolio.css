@@ -19,7 +19,8 @@ body {
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: bottom;
+    padding: 100px;
 }
 
 .text-vertical-center h1 {
@@ -31,17 +32,17 @@ body {
 
 /* Custom Button Styles */
 
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
-}
-
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
+}
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .btn-light {
